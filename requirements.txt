@@ -1,0 +1,9 @@
+# Core ML / NLP
+torch
+transformers
+
+# Data & evaluation
+scikit-learn
+pandas
+numpy
+tqdm
