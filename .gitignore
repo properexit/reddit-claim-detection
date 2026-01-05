@@ -41,7 +41,7 @@ logs/
 # ------------------------------
 # Data (local only)
 # ------------------------------
-data/processed/
+data/ibm_raw/
 
 # ------------------------------
 # Temporary files
