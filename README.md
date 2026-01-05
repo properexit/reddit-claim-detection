@@ -30,11 +30,11 @@ The system is implemented using **BERT-mini** for efficiency and reproducibility
 
 ```mermaid
 flowchart TD
-    A[Reddit Post] --> B[Sentence Scoring]
-    B --> C[Claim Detection]
-    C --> D[Claim Type Classification]
-    D --> E[Span Extraction (BIO Tagging)]
-    E --> F[Linguistic Analysis (Optional)]
+    A["Reddit Post"] --> B["Sentence Scoring"]
+    B --> C["Claim Detection"]
+    C --> D["Claim Type Classification"]
+    D --> E["Span Extraction (BIO Tagging)"]
+    E --> F["Linguistic Analysis (Optional)"]
 ```
 
 **Design choices**:
