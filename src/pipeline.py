@@ -242,7 +242,11 @@ class ClaimPipeline:
         for sent, claim_prob in candidates:
             result = self(sent)
 
-            if result["span"] == "NO_SPAN_PREDICTED":
+            # Skip sentences with no detected claim or no span
+            if not result.get("claim"):
+                continue
+
+            if result.get("span") in (None, "NO_SPAN_PREDICTED"):
                 continue
 
             span_len = len(result["span"].split())
