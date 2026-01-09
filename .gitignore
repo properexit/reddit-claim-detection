@@ -34,14 +34,14 @@ Thumbs.db
 # ------------------------------
 # Training artifacts
 # ------------------------------
-experiments/
+!experiments/
 checkpoints/
 logs/
 
 # ------------------------------
 # Data (local only)
 # ------------------------------
-data/ibm_raw/
+!data/ibm_raw/
 
 # ------------------------------
 # Temporary files

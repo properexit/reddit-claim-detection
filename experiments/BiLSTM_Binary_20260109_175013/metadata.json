@@ -1,0 +1,15 @@
+{
+    "experiment_name": "BiLSTM_Binary",
+    "timestamp": "20260109_175013",
+    "config": {
+        "model_type": "BiLSTM",
+        "task": "Binary",
+        "epochs": 5,
+        "lr": 0.001,
+        "hidden_dim": 128
+    },
+    "results": {
+        "f1_score": 0.8106666666666666,
+        "final_loss": 0.01915205456316471
+    }
+}

@@ -1,0 +1,12 @@
+Experiment: BiLSTM_Multiclass
+Date: 20260109_175038
+========================================
+              precision    recall  f1-score   support
+
+        None       0.46      0.30      0.36        80
+    Explicit       0.67      0.85      0.75       149
+    Implicit       0.00      0.00      0.00        14
+
+    accuracy                           0.62       243
+   macro avg       0.38      0.38      0.37       243
+weighted avg       0.56      0.62      0.58       243

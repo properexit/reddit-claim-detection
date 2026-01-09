@@ -1,0 +1,13 @@
+{
+    "experiment_name": "Logistic_Regression_Baseline",
+    "timestamp": "20260109_174946",
+    "config": {
+        "model_type": "Logistic_Regression",
+        "vocab_size": 18044,
+        "embedding": "FastText_Mean"
+    },
+    "results": {
+        "binary_f1": 0.8238341968911918,
+        "multiclass_macro_f1": 0.4124895362464423
+    }
+}

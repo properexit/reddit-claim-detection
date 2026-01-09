@@ -1,0 +1,15 @@
+{
+    "experiment_name": "BiLSTM_Multiclass",
+    "timestamp": "20260109_175038",
+    "config": {
+        "model_type": "BiLSTM",
+        "task": "Multiclass",
+        "epochs": 5,
+        "lr": 0.001,
+        "hidden_dim": 128
+    },
+    "results": {
+        "f1_score": 0.3697328312712928,
+        "final_loss": 0.2717953622341156
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "experiment_name": "Naive_Bayes_Baseline",
+    "timestamp": "20260109_174946",
+    "config": {
+        "model_type": "Naive_Bayes",
+        "vocab_size": 18044,
+        "embedding": "FastText_Mean"
+    },
+    "results": {
+        "binary_f1": 0.771513353115727,
+        "multiclass_macro_f1": 0.4933996691698257
+    }
+}
