@@ -12,7 +12,7 @@ phenomena that cause them.
 import pandas as pd
 from src.pipeline import ClaimPipeline
 
-DATA_PATH = "data/raw/labels_v5.csv"
+DATA_PATH = "data/raw/labels_v6.csv"
 OUTPUT_PATH = "analysis/error_samples.csv"
 
 pipeline = ClaimPipeline()

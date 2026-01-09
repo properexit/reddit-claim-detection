@@ -16,7 +16,7 @@ from src.pipeline import ClaimPipeline
 from analysis.hedging import count_hedges, has_hedge
 
 
-DATA_PATH = "data/raw/labels_v5.csv"
+DATA_PATH = "data/raw/labels_v6.csv"
 
 
 def main():

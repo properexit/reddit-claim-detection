@@ -25,7 +25,7 @@ from src.pipeline import ClaimPipeline, split_sentences_regex
 # -----------------------------
 # Configuration
 # -----------------------------
-DATA_PATH = "data/raw/labels_v5.csv"
+DATA_PATH = "data/raw/labels_v6.csv"
 THRESHOLD = 0.5  # kept for conceptual clarity
 
 

@@ -29,7 +29,7 @@ SEED = 42
 set_seed(SEED)
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_PATH = os.path.join(PROJECT_ROOT, "data", "raw", "labels_v5.csv")
+DATA_PATH = os.path.join(PROJECT_ROOT, "data", "raw", "labels_v6.csv")
 SAVE_DIR = os.path.join(PROJECT_ROOT, "experiments", "span_detection")
 os.makedirs(SAVE_DIR, exist_ok=True)
 

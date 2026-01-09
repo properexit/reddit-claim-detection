@@ -10,7 +10,7 @@ import pandas as pd
 from src.pipeline import ClaimPipeline
 from analysis.claim_typology import analyze_claim_typology
 
-DATA_PATH = "data/raw/labels_v5.csv"
+DATA_PATH = "data/raw/labels_v6.csv"
 
 
 def main():
