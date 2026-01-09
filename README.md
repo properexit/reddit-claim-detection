@@ -6,7 +6,7 @@ A lightweight NLP pipeline for identifying medical and self-medication claims in
 
 ## Project Overview
 
-This project builds a **multi-stage NLP pipeline** to detect and analyze claims in Reddit posts related to self-medication and health discussions.
+This project implements a multi-stage NLP pipeline to detect and categorize medical claims in informal Reddit discussions. It compares state-of-the-art Transformer models (BERT) against traditional machine learning baselines using FastText embeddings.
 
 Unlike simple text classification, the system explicitly models **where and how claims are expressed**.
 
@@ -155,9 +155,15 @@ The same trained model is evaluated under three inference strategies.
 - Claims in Reddit health posts are often globally distributed  
 
 ---
+## New: Traditional & Deep Learning Baselines
+We have implemented a baseline suite to compare against our BERT-mini pipeline. These models use **FastText (crawl-300d-2M)** static embeddings.
 
+* **Logistic Regression (LR):** Uses document-level "Mean Vector" centroids for fast, keyword-based classification.
+* **Naive Bayes (NB):** A generative baseline that models class distributions, useful for handling class imbalance.
+* **BiLSTM:** A 2-layer Bidirectional LSTM that processes word sequences to capture linguistic context.
 ## External Benchmark — IBM Debater Claim Detection
 
+---
 Zero-shot evaluation on the IBM Debater claim sentence benchmark (Wikipedia domain).
 
 ### Dataset
@@ -215,7 +221,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Train Models
+### Train BERT Model
 
 ```bash
 python src/train.py
@@ -228,7 +234,10 @@ python src/train_span.py
 ```bash
 python run_sample.py
 ```
-
+###  Train LR, NB, and BiLSTM
+```bash
+python train_all_baselines.py
+```
 Example output:
 
 ```json
@@ -263,6 +272,12 @@ python -m benchmark_analysis.eval_ibm_claim_detection
   - Reproducibility  
 
 ---
+### Experiment Logging
+
+All runs are automatically logged to the experiments/ folder. Each log includes:
+
+- metadata.json: Hyperparameters (LR, Hidden Dim, Epochs) and final F1 scores.
+- classification_report.txt: Detailed Precision, Recall, and F1 per class (None, Explicit, Implicit).
 
 ## Limitations
 - Implicit claims remain difficult to define and detect  
